@@ -1,17 +1,13 @@
 site_name: AFASTGRok MESH
 site_url: https://analystcode.github.io/AFASTGRok-MESH-/
 site_author: Harish Nagaraju
-site_description: >-
-  Planetary-Scale Decentralized AI Video Delivery Network —
-  Turning 1.3 billion idle devices into a 6+ exabyte cache ocean.
+site_description: Planetary-Scale Decentralized AI Video Delivery Network
 
 repo_url: https://github.com/analystcode/AFASTGRok-MESH-
-repo_name: analystcode/AFASTGRok-MESH-
 edit_uri: edit/main/docs/
 
 theme:
   name: material
-  custom_dir: overrides
   palette:
     - scheme: slate
       primary: deep purple
@@ -28,58 +24,24 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    - navigation.top
     - search.suggest
-    - search.highlight
     - content.code.copy
-    - content.code.annotate
-    - toc.follow
-  icon:
-    repo: fontawesome/brands/github
-  favicon: assets/favicon.ico
-  logo: assets/logo.png
 
 plugins:
   - search
-  - git-revision-date-localized:
-      type: timeago
-      enable_creation_date: true
 
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/analystcode
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/analystcode
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/harishnagaraju
-
-extra_css:
-  - assets/stylesheets/extra.css
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Tokenomics: tokenomics.md
+  - ISP Partnership: isp-partnership.md
+  - Security: security.md
+  - Roadmap: roadmap.md
+  - Whitepaper: https://github.com/analystcode/AFASTGRok-MESH-/raw/main/FASTGRok_MESH_Whitepaper_v1.1.pdf
 
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       permalink: true
-      title: On this page
-
-nav:
-  - Home: index.md
-  - Whitepaper (PDF): https://github.com/analystcode/AFASTGRok-MESH-/raw/main/FASTGRok_MESH_Whitepaper_v1.1.pdf
-  - Architecture: architecture.md
-  - Tokenomics ($MESH): tokenomics.md
-  - ISP Partnership Playbook: isp-partnership.md
-  - Security & Privacy: security.md
-  - Roadmap: roadmap.md
-  - Releases: https://github.com/analystcode/AFASTGRok-MESH-/releases
-
-copyright: >
-  Copyright © 2025–2026 Harish Nagaraju • 
-  <a href="mailto:analystcode@gmail.com">analystcode@gmail.com</a>
