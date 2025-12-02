@@ -2,8 +2,8 @@ site_name: AFASTGRok MESH
 site_url: https://analystcode.github.io/AFASTGRok-MESH-/
 site_author: Harish Nagaraju
 site_description: >-
-  Planetary-Scale Decentralized AI Video Delivery Network
-  — Turning 1.3 billion idle devices into a 6+ exabyte cache ocean.
+  Planetary-Scale Decentralized AI Video Delivery Network —
+  Turning 1.3 billion idle devices into a 6+ exabyte cache ocean.
 
 repo_url: https://github.com/analystcode/AFASTGRok-MESH-
 repo_name: analystcode/AFASTGRok-MESH-
@@ -29,12 +29,10 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.top
-    - navigation.expand
     - search.suggest
     - search.highlight
     - content.code.copy
     - content.code.annotate
-    - content.tabs.link
     - toc.follow
   icon:
     repo: fontawesome/brands/github
@@ -83,5 +81,5 @@ nav:
   - Releases: https://github.com/analystcode/AFASTGRok-MESH-/releases
 
 copyright: >
-  Copyright &copy; 2025–2026 Harish Nagaraju • 
+  Copyright © 2025–2026 Harish Nagaraju • 
   <a href="mailto:analystcode@gmail.com">analystcode@gmail.com</a>
