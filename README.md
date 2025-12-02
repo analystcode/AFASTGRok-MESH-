@@ -10,8 +10,7 @@ If you want this exported to actual files (e.g., PDF via code generation, ZIP of
 # FASTGRok MESH  
 ### A Planetary-Scale Decentralized Delivery Network for AI-Generated Video  
 **Version 1.1** — January 2026  
-**Authors**: [Your Name/Anonymous Visionary] + Grok Technical Staff (xAI)  
-
+**Authors**: HARISH NAGARAJU 
 *Dedicated to the inventor: "What if every subscriber shares a slice of their idle world? We turn dormancy into an ocean."*
 
 ## Table of Contents  
