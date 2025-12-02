@@ -45,23 +45,16 @@ jobs:
           path: target/release/mesh-node
 
   # ──────────────────────────────────────────────────────────────
-  # 2. Automatically update GitHub Releases with the Whitepaper PDF
+  # 2. Release Whitepaper PDF on tags
   # ──────────────────────────────────────────────────────────────
   release-pdf:
     name: Release Whitepaper PDF
-    needs: []  # runs independently
-    if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
     permissions:
-      contents: write   # needed to create release + upload assets
+      contents: write
     steps:
       - uses: actions/checkout@v4
-
-      - name: Download latest whitepaper (or use local)
-        run: |
-          curl -L -o FASTGRok_MESH_Whitepaper_v1.1.pdf \
-            https://transfer.sh/get/YourLatestPDFLinkHere || \
-            cp FASTGRok_MESH_Whitepaper_v1.1.pdf ./ 2>/dev/null || true
 
       - name: Create/Release GitHub Release
         uses: softprops/action-gh-release@v2
@@ -70,12 +63,10 @@ jobs:
             FASTGRok_MESH_Whitepaper_v1.1.pdf
             README.md
           name: FASTGRok MESH ${{ github.ref_name }}
-          draft: false
-          prerelease: false
           generate_release_notes: true
 
   # ──────────────────────────────────────────────────────────────
-  # 3. Pages deployment (optional – static site from /docs)
+  # 3. Deploy Docs to GitHub Pages
   # ──────────────────────────────────────────────────────────────
   pages:
     name: Deploy Docs to GitHub Pages
@@ -86,21 +77,18 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v4
-
-      - name: Setup Pages (MkDocs or plain HTML)
+      - name: Setup Pages
         uses: actions/configure-pages@v5
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./docs   # put your docs/whitepaper here
-
+          path: ./docs
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
 
   # ──────────────────────────────────────────────────────────────
-  # 4. Security scan (CodeQL)
+  # 4. CodeQL Security Scan
   # ──────────────────────────────────────────────────────────────
   codeql:
     name: CodeQL Security Scan
@@ -118,3 +106,6 @@ jobs:
         with:
           languages: ${{ matrix.language }}
       - name: Autobuild
+        uses: github/codeql-action/autobuild@v3
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
