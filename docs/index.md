@@ -3,6 +3,17 @@ site_url: https://amora.github.io/AFASTGRok-MESH-/
 site_author: analystcode
 site_description: Planetary-Scale Decentralized AI Video Delivery Network
 
+---
+title: Home
+---
+# AFASTGRok MESH
+
+> Turning 1.3B idle devices into a 6+ EB AI video cache ocean.
+
+[Download Whitepaper](https://github.com/analystcode/AFASTGRok-MESH-/raw/main/FASTGRok_MESH_Whitepaper_v1.1.pdf){.md-button .md-button--primary}
+
+[[Architecture]](./architecture.md) | [[Tokenomics]](./tokenomics.md) | [[Roadmap]](./roadmap.md)
+
 repo_url: https://github.com/analystcode/AFASTGRok-MESH-
 repo_name: analystcode/AFASTGRok-MESH-
 edit_uri: edit/main/docs/
