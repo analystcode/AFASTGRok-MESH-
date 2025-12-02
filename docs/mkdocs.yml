@@ -11,38 +11,22 @@ theme:
   palette:
     - scheme: slate
       primary: deep purple
-      accent: amber
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
     - scheme: default
       primary: deep purple
-      accent: amber
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - search.suggest
-    - content.code.copy
-
-plugins:
-  - search
 
 nav:
   - Home: index.md
+  - Security: security.md
+  - Roadmap: roadmap.md
   - Architecture: architecture.md
   - Tokenomics: tokenomics.md
   - ISP Partnership: isp-partnership.md
-  - Security: security.md
-  - Roadmap: roadmap.md
-  - Whitepaper: https://github.com/analystcode/AFASTGRok-MESH-/raw/main/FASTGRok_MESH_Whitepaper_v1.1.pdf
 
 markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - tables
+  - tables  # This ensures tables render properly
   - toc:
       permalink: true
