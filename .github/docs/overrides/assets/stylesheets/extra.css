@@ -1,0 +1,34 @@
+/* Custom AFASTGRok MESH branding */
+:root > * {
+  --md-primary-fg-color:        #6B46C1;
+  --md-primary-fg-color--light: #9F7AEA;
+  --md-primary-fg-color--dark:  #553C9A;
+  --md-accent-fg-color:         #FBBF24;
+}
+
+/* Hero banner on homepage */
+.md-typeset .md-header {
+  background: linear-gradient(135deg, #6B46C1 0%, #9F7AEA 100%);
+}
+
+/* Bigger, bolder titles */
+.md-typeset h1 {
+  font-weight: 800;
+  color: #9F7AEA;
+}
+
+/* Custom button style */
+.md-button--mesh {
+  background-color: #FBBF24;
+  color: black;
+  font-weight: bold;
+}
+.md-button--mesh:hover {
+  background-color: #F59E0B;
+}
+
+/* Code blocks */
+.md-typeset code {
+  background-color: #2D1B69;
+  color: #E9D5FF;
+}
