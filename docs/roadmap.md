@@ -14,4 +14,6 @@
 We are not building another blockchain.  
 We are building the **infrastructure layer for all future generative video**.
 
-[Full 24-month Gantt chart in Whitepaper (page 24)](FASTGRok_MESH_Whitepaper_v1.1.pdf){ .md-button .md-button--primary }
+[Full 24-month Gantt chart in Whitepaper (page 24)](https://github.com/analystcode/AFASTGRok-MESH-/raw/main/FASTGRok_MESH_Whitepaper_v1.1.pdf){ .md-button .md-button--primary }
+
+[Download Whitepaper PDF](https://github.com/analystcode/AFASTGRok-MESH-/raw/main/FASTGRok_MESH_Whitepaper_v1.1.pdf){ .md-button .md-button--primary }
