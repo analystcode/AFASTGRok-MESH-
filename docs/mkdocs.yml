@@ -43,5 +43,6 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - tables
   - toc:
       permalink: true
